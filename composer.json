@@ -1,0 +1,12 @@
+{
+  "name" : "/328/pets2",
+  "authors" : [
+    {
+      "name" : "Rajpreet Dhaliwal",
+      "email" : "rdhaliwal6@mail.greenriver.edu"
+    }
+  ],
+  "require" : {
+    "bcosca/fatfree-core" : "dev-master"
+  }
+}
