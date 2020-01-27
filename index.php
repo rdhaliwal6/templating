@@ -12,11 +12,10 @@ require("vendor/autoload.php");
 $f3 = Base::instance();
 
 // Define a default route
-$f3->route('GET /', function () {
-    echo "<h1> My Pets <br></h1>";
-    echo "<a href='order'>Order a Pet</a>";
-    //$views = new Template();
-    //echo $views->render("views/home.html");
+$f3->route('GET /', function ($f3) {
+    $f3->set('title', 'All About Templating');
+    $views = new Template();
+    echo $views->render("views/home.html");
 });
 
 // Run F3
